@@ -1,0 +1,52 @@
+/* COLOR PALETTE (Analogous example) */
+:root {
+  --color1: #1b4332;   
+  --color2: #40916c;   
+  --color3: #74c69d;   
+}
+
+/* GLOBAL STYLES */
+body {
+  margin: 0;
+  font-family: Garamond;
+  color: #ffffff;
+  background-color: #111;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background-image: url("https://th.bing.com/th/id/R.6e3d4fb05ad0e71f2a0b25a8458c16fc?rik=JzJuoJA3aIgQPg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f10%2fWallpapers-HD-Forest.jpg&ehk=VHMu4RN8a8LsGvKXxyD1%2b4wFrKTM%2b5MyyUmE5Y%2fvgBc%3d&risl=&pid=ImgRaw&r=0");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0,0,0,0.5); /* overlay */
+  background-blend-mode: multiply;
+}
+
+/* GRADIENT SECTION */
+.gradient-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, var(--color1), var(--color2));
+}
+
+/* SOLID COLOR SECTION */
+.solid-section {
+  padding: 60px 20px;
+  background-color: var(--color3);
+  color: #222; /* darker text for contrast */
+}
+
+/* OPTIONAL HOVER EFFECT */
+section:hover {
+  transform: scale(1.01);
+  transition: 0.3s ease;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #95d5b2;
+  color: #222
+}
